@@ -1,5 +1,5 @@
-#include    <stdio.h>
-#include    <stdlib.h>
+#include	<stdio.h>
+#include	<stdlib.h>
 #include	<stdarg.h>		/* ANSI C header file */
 #include	<syslog.h>		/* for syslog() */
 
@@ -13,7 +13,7 @@ static void	err_doit(int, int, const char *, va_list);
 void
 err_ret(const char *fmt, ...)
 {
-	va_list		ap;
+	va_list 	ap;
 
 	va_start(ap, fmt);
 	err_doit(1, LOG_INFO, fmt, ap);
